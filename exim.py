@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd  # Excel okumak için (ama veri hardcoded, çünkü Streamlit Cloud'da dosya olmayabilir)
 
-st.set_page_config(page_title="Anket - Hangi Kişiye Benziyorsun?", layout="centered")
+st.set_page_config(page_title="Anket - Who R U?", layout="centered")
 
 st.title("📊 Anket: Hangi Kişiye Benziyorsun?")
 st.markdown("Aşağıdaki 11 soruya cevap ver, cevaplara göre en uyumlu kişiyi öğren! (Excel verilerine göre puanlama)")
@@ -249,3 +249,4 @@ if st.button("Sonucumu Göster 🚀", type="primary", use_container_width=True):
         with st.expander("Tüm Kişi Puanları"):
 
             st.json(tum_puanlar)
+
